@@ -6,7 +6,7 @@ import com.pedropathing.follower.Follower;
 import com.pedropathing.follower.ManualDrive;
 import com.pedropathing.math.Pose;
 import com.pedropathing.paths.Path;
-import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
@@ -39,8 +39,8 @@ public class CompTeleOp extends OpMode {
     private CRServo windmillServo = null;
     public int LAUNCHER_TARGET_VELOCITY = 1250; //2678 RPM
     public int INTENDED_LAUNCHER_VELOCITY = 1250;
-    public double INTENDED_LAUNCHER_POWER = 0.00;
-    public double LAUNCHER_POWER = 0.00;
+    public double INTENDED_LAUNCHER_POWER = 1.00;
+    public double LAUNCHER_POWER = 1.00;
     private boolean shooting = false;
 
     private boolean VelocityPowerShift = false; //False = Velocity, True = Power
